@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+<head>
+	<title>TODO supply a title - Rac&oacute; de la FIB</title>
+	
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<link rel="shorcut icon" href="/racoEstatic/img/favicon.ico" />
+
+		
+		<script src="/racoEstatic/js/jquery1.11.3.min.js"></script>
+		
+		<script src="/racoEstatic/js/jquery-ui1.9.2.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="/racoEstatic/css/maximo.css" media="all">
+		<link rel="stylesheet" type="text/css" href="/racoEstatic/css/iconize.css" media="all">
+		<link rel="stylesheet" type="text/css" href="/racoEstatic/css/jquery-ui-fib.css" media="all" />
+		<link rel="stylesheet" type="text/css" href="/racoEstatic/css/impressio.css" media="print" />
+
+		<script type="text/javascript" src="/racoEstatic/js/jquery.ui.datepicker-ca.js"></script>
+		<script type="text/javascript" src="/racoEstatic/js/jquery.qtip.min.js"></script>
+
+		<script type="text/javascript" src="/racoEstatic/js/jquery.corners.js"></script>
+
+
+		<script type="text/javascript" src="/racoEstatic/js/funcions.js"></script>
+		<script type="text/javascript" src="/racoEstatic/js/javascript.js"></script>
+
+
+	
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+</head>
+
+<body>
+	<div id="page">
+		<div id="page_centered">
+			<div class="cap">
+				
+
+
+
+
+
+
+<div id="barra">
+	<ul id="links">
+		<li><a href="http://www.fib.upc.edu">Portal FIB</a></li>
+		<li><a href="http://www.upc.edu">Portal UPC</a></li>
+		<li class="last"><a href="http://www.upc.edu/webs-upc">Intranets UPC</a></li>
+	</ul>
+	
+	<div class="rightlinks">
+		<ul id="idiomes">
+			
+				<li class="active first">Català</li>
+				<li><a href="/servlet/Idioma.CambioIdioma?idioma=es">Castellano</a></li>
+				<li><a href="/servlet/Idioma.CambioIdioma?idioma=en">English</a></li>			
+			
+			
+			
+		</ul>
+		
+		<ul id="eines">
+			<li id="tamany"><a href="#tamany" title="Augmentar lletres"><img src="/racoEstatic/img/icons/augmentat_lletres.gif" alt="Augmentar lletres" /></a></li>
+			<li><a id="Inici" href="/home/portada" title="Inici"><img src="/racoEstatic/img/icons/home.gif" alt="Inici" /></a></li>
+			<li><a id="informacio" href="/beta.jsp" title="Informació"><img src="/racoEstatic/img/icons/informacio.gif" alt="Informació" /></a></li>
+			<li><a class="contactar" id="contactar" href="http://suport.fib.upc.edu" title="Contactar"><img src="/racoEstatic/img/icons/correu.gif" alt="Contactar" /></a></li>
+			<li><a id="mapa" href="/mapa.jsp" title="Mapa del web"><img src="/racoEstatic/img/icons/mapa_web.gif" alt="Mapa del web" /></a></li>
+		</ul>
+	</div>
+</div>
+
+<div class="logos">
+	<a href="http://www.upc.edu"><img id="logoupc" src="/racoEstatic/img/Logo_UPC.gif"></a>
+	<a href="http://www.fib.upc.edu"><img id="logofib" src="/racoEstatic/img/Logo_FIB.gif"></a>
+	<span id="titol"><a href="https://raco.fib.upc.edu/"><img id="logoraco" src="/racoEstatic/img/logo_raco.png" /></a></span>
+	<!--<span id="beta"><img id="logobeta" src="/racoEstatic/img/logo_beta.png" /></span>-->
+</div>
+
+<div class="buscar">
+	<form action="/cercar.jsp" method="post">
+		<select id="tipus_cerca" name="tipus">
+			<option value="Cercar...">Cercar... </option>
+			<option selected value="estudiants">Estudiants</option>
+			<option value="personal">Personal UPC</option>
+		</select>
+		<input id="camp_cerca" name="q" type="text" />
+		<button type="submit" class="search no-text ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only"><span class="ui-button-icon-primary ui-icon ui-icon-search"></span><span class="ui-button-text">Cercar... </span></button>
+	</form>
+</div>	
+				
+
+<div class="usuari">
+<div class="pestanya_usuari">
+<div class="sortir">
+<a href="/logout">Sortir</a>
+</div>
+<div class="nom"><a href="/perfil.jsp">ENRIC GINER LÓPEZ</a></div>
+</div>
+</div>
+			
+				
+
+
+
+<div class="pestanyes">
+
+	
+		<ul id="nav">
+			
+				
+			<li class="normal">
+		 		<a class="home" href="/home/portada"><span>Inici</span></a> 		
+			</li>	
+			
+				
+				
+					
+					
+				<li class="sel assignatures">
+					<a href="/home/assignatures"><span>Assignatures</span></a>
+					<ul class="subnav">
+						
+						<li>
+							<a href="/home/assignatura?espai=270531">Cloud Computing (CC-MEI)</a>
+						</li>
+						
+						<li>
+							<a href="/home/assignatura?espai=270502">DESENVOLUPAMENT I GESTIÓ DE SISTEMES D'INFORMACIÓ (DGSI-MEI)</a>
+						</li>
+						
+						<li>
+							<a href="/home/assignatura?espai=270515">FINANÇAMENT PER PROJECTES EMPRESARIALS INNOVADORS (FPEI-MEI)</a>
+						</li>
+						
+						<li>
+							<a href="/home/assignatura?espai=270018">ARQUITECTURA DE COMPUTADORS (GRAU-AC)</a>
+						</li>
+						
+						<li>
+							<a href="/home/assignatura?espai=270501">INTERNET, SEGURETAT I DISTRIBUCIÓ DE CONTINGUTS MULTIMÈDIA (ISDCM-MEI)</a>
+						</li>
+						
+						<li>
+							<a href="/home/assignatura?espai=270510">PLA ESTRATÈGIC I GOVERN DE LES TECNOLOGIES DE LA INFORMACIÓ (PEGTI-MEI)</a>
+						</li>
+						
+						<li>
+							<a href="/home/assignatura?espai=270511">VIABILITAT DE PROJECTES EMPRESARIALS INNOVADORS (VPEI-MEI)</a>
+						</li>
+							
+					</ul>	
+				</li>
+			
+			
+			
+					
+			<li class="normal">
+				<a href="/home/grups" class="t"><span>Grups</span></a>
+				<ul class="subnav">
+					
+					<li>
+					<a href="/home/grup?espai=14">Masters FIB (MASTER)</a>
+					</li>
+					
+					<li>
+					<a href="/home/grup?espai=11">Màster en Enginyeria Informàtica (MEI)</a>
+					</li>
+						
+				</ul>	
+			</li>
+				
+			
+				
+				
+				
+				<li class="normal">
+					<a href="/home/gestio"><span>Gestió</span></a>		
+						<ul class="subnav">
+					
+						
+							
+							
+								
+							
+						
+						<li>
+							<a href="/gestio/esecretaria.jsp">e-Secretaria</a>				
+						</li>		
+					
+						
+							
+							
+								
+							
+						
+						<li>
+							<a href="/horari.jsp">El meu horari</a>				
+						</li>		
+					
+						
+							
+							
+								
+							
+						
+						<li>
+							<a href="/gestio/expedient">Expedient</a>				
+						</li>		
+					
+						
+							
+							
+								
+							
+						
+						<li>
+							<a href="/instancies/grups/veure">Canvis de grup</a>				
+						</li>		
+					
+						
+							
+							
+								
+							
+						
+						<li>
+							<a href="/instancies/matricules/veure">Canvis de matrícula</a>				
+						</li>		
+					
+				</ul>
+			</li>
+				
+			
+				
+				
+				
+				<li class="normal">
+					<a href="/home/comunitat"><span>Comunitat</span></a>		
+						<ul class="subnav">
+					
+						
+							
+							
+								
+							
+						
+						<li>
+							<a href="/forum/forums/list.page">Fòrums públics</a>				
+						</li>		
+					
+						
+							
+							
+								
+							
+						
+						<li>
+							<a href="/comunitat/buscarConnectats.jsp">Buscar connectats</a>				
+						</li>		
+					
+						
+							
+							
+								
+							
+						
+						<li>
+							<a href="/comunitat/cercar-estudiants.jsp">Cercar estudiants</a>				
+						</li>		
+					
+						
+							
+							
+								
+							
+						
+						<li>
+							<a href="/borsa/llistatOfertes.jsp">Borsa de treball/Pràctiques en empresa</a>				
+						</li>		
+					
+				</ul>
+			</li>
+				
+			
+				
+			
+				
+				
+				
+				<li class="normal">
+					<a href="/home/projectes"><span>Projectes</span></a>		
+						<ul class="subnav">
+					
+						
+							
+							
+								
+							
+						
+						<li>
+							<a href="/projectes/ofertes/buscar.jsp?ultimes=s">Ofertes de Projectes</a>				
+						</li>		
+					
+				</ul>
+			</li>
+				
+			
+				
+				
+				
+				<li class="normal">
+					<a href="/home/serveis"><span>Serveis</span></a>		
+						<ul class="subnav">
+					
+						
+							
+							
+								
+							
+						
+						<li>
+							<a href="/serveis/quotes.jsp">Quotes</a>				
+						</li>		
+					
+						
+							
+							
+								
+							
+						
+						<li>
+							<a href="/ReservesWebApp/newReserva.do">Reserva d'equips</a>				
+						</li>		
+					
+						
+							
+							
+								
+							
+						
+						<li>
+							<a href="https://www.fib.upc.edu/ca/la-fib/serveis-tic/distribucio-de-programari">Distribució de software</a>				
+						</li>		
+					
+						
+							
+							
+								
+							
+						
+						<li>
+							<a href="/ocupacio.jsp">Ocupació de les aules</a>				
+						</li>		
+					
+						
+							
+							
+								
+							
+						
+						<li>
+							<a href="/oauth/gestio-api/api.jsp">API del Racó</a>				
+						</li>		
+					
+						
+							
+							
+								
+							
+						
+						<li>
+							<a href="/serveis/acces-disc.jsp">Accés al disc</a>				
+						</li>		
+					
+						
+							
+							
+								
+							
+						
+						<li>
+							<a href="https://gn6.upc.edu/puntfib/">Suport FIB</a>				
+						</li>		
+					
+				</ul>
+			</li>
+				
+			
+				
+			
+		</ul>
+	
+	
+
+</div>
+			</div>
+			
+
+<div class="ariadna">
+	
+	
+		<a href="/home/assignatures" title="Assignatures">Assignatures</a>
+		&gt; <a href="/home/assignatura?espai=270501">INTERNET, SEGURETAT I DISTRIBUCIÓ DE CONTINGUTS MULTIMÈDIA</a>
+	
+	
+	
+	
+	
+</div>	
+			<div class="contingut">			
+				
+<div class="title-section">
+	
+		
+			<h1>INTERNET, SEGURETAT I DISTRIBUCIÓ DE CONTINGUTS MULTIMÈDIA</h1>
+		
+		
+		
+	
+</div>
+
+				<div class="dintre_contingut">
+					
+					  
+        
+        <form action="webresources/generic/getInfo" method="get">
+            <input type="text" name="info"/>
+            <input type="text" name="fecha"/>
+            <input type="submit" name="submit" value="Enviar con GET"/>
+        </form>        
+        
+        <form action="webresources/generic/postInfo" method="post">
+            <input type="text" name="info"/>
+            <input type="text" name="fecha"/>
+            <input type="submit" name="submit" value="Enviar con POST"/>
+        </form>
+    
+				</div>
+			</div>
+			
+
+
+<div class="sidebar_left">
+	<div class="menu">
+		<ul>
+			
+						
+				
+				
+					
+					
+						
+					
+										
+				<li class="normal">
+					<a href="/avisos/llista.jsp?assig=ISDCM-MEI">Avisos</a>				
+				</li>			
+			
+						
+				
+				
+					
+					
+						
+					
+										
+				<li class="normal">
+					<a href="/documentacio-examens/llista.jsp?espai=270501">Documentació exàmens</a>				
+				</li>			
+			
+						
+				
+				
+					
+					
+						
+					
+										
+				<li class="normal">
+					<a href="/practiques/llista.jsp?espai=270501">Pràctiques</a>				
+				</li>			
+			
+						
+				
+				
+					
+					
+						
+					
+										
+				<li class="normal">
+					<a href="/forum/viewCategory/listByEspaiID/270501.page">Fòrums</a>				
+				</li>			
+			
+						
+				
+				
+					
+					
+						
+					
+										
+				<li class="normal">
+					<a href="/professors.jsp?assig=ISDCM-MEI">Professors</a>				
+				</li>			
+			
+						
+				
+				
+					
+					
+						
+					
+										
+				<li class="normal">
+					<a href="/delegats.jsp?assig=ISDCM-MEI">Delegats</a>				
+				</li>			
+			
+						
+				
+				
+					
+					
+						
+					
+										
+				<li class="normal">
+					<a href="/horari_assignatura.jsp?espai=270501">Horari</a>				
+				</li>			
+			
+		</ul>
+	</div>
+	
+	
+	<div class="caixa">
+		<div class="dintre">
+			<h3>Enllaços d'interès</h3>
+			<div class="text">
+			<ul>
+				
+							
+					
+					
+						
+						
+							
+						
+											
+					<li class="normal">
+						<a href="/servlet/raco.assig.GuiaDocent?codi_asg=ISDCM-MEI" target="_blank" title="">Guia Docent</a>				
+					</li>			
+				
+			</ul>
+			</div>
+		</div>
+	</div>
+	
+</div>			
+			<br style="clear: both;" />
+		</div>
+	</div>	
+	
+
+
+
+
+<div id="footer">
+  <img src="/racoEstatic/img/logo_fib_peu.png" alt="" class="logo-peu" />
+  <p class="copyright">&copy; Facultat d'Informàtica de Barcelona   
+        
+                
+                        <span class="mail"><a href="/servlet/raco.utils.VersioMobil?mode=1" title="Activa">Versió Mòbil</a></span>
+                
+                
+        
+        <span class="mail"><a href="http://suport.fib.upc.edu" target="_blank" title="Contacta amb nosaltres">
+  <img src="/racoEstatic/img/banner-suport-fib.jpg">
+  </a>
+  </span>
+        </p>
+</div>
+<br>
+		
+	</body>
+</html>
